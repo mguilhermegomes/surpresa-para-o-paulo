@@ -145,7 +145,7 @@ body {
 .principal__conteudo__video_choro {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 20px;
 }
