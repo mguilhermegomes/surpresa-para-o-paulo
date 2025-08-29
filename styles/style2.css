@@ -41,6 +41,8 @@ body {
     line-height: 1.5;
 }
 
+/* -----------------------
+-- === CABEÇALHO === */
 .cabecalho {
     padding: 2% 0% 0% 10%;
 }
@@ -63,6 +65,8 @@ body {
     color: #c4c4c4;
 }
 
+/* -----------------------
+-- === MAIN === */
 .principal {
     padding: 5% 0%;
     display: flex;
@@ -72,33 +76,53 @@ body {
     gap: 40px;
 }
 
-.principal__conteudo {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    gap: 80px;
-}
-
+/* -----------------------
+-- === SEÇÃO DE TÍTULOS === */
 .principal__titulos {
     display: flex;
     flex-direction: column;
 }
 
-.principal__titulos__titulo_ceara {
+/* -----------------------
+-- === TÍTULO CEARÁ === */
+.titulo__ceara {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: var(--title-gap);
 }
 
-.principal__titulos__titulo_fortaleza {
+.titulo__ceara__img {
+    width: var(--title-img-width);
+}
+
+.titulo__ceara__texto {
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    color: var(--default-color);
+    transition: var(--default-transition);
+}
+
+.titulo__ceara__texto:hover {
+    font-size: var(--title-font-size-hover);
+}
+
+/* -----------------------
+-- === TÍTULO FORTALEZA === */
+.titulo__fortaleza {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: var(--title-gap);
 }
 
-.principal__titulos__titulo_fortaleza__titulo {
+.titulo__fortaleza__img {
+    width: var(--title-img-width);
+    border-radius: 50px;
+}
+
+.titulo__fortaleza__texto {
     font-family: var(--title-font-family);
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
@@ -106,43 +130,26 @@ body {
     transition: var(--default-transition);
 }
 
-.principal__titulos__titulo_fortaleza__titulo:hover {
+.titulo__fortaleza__texto:hover {
     font-size: var(--title-font-size-hover);
 }
 
-.texto__destaque__fortal {
+.titulo__fortaleza__texto__destaque {
     color: #054f77;
 }
 
-.principal__titulos_titulo_fortaleza__img {
-    width: var(--title-img-width);
-    border-radius: 50px;
-}
-
-.principal__titulo__imagem__vovo {
-    width: var(--title-img-width);
-}
-
-.principal__titulo__vovo {
-    font-family: var(--title-font-family);
-    font-size: var(--title-font-size);
-    font-weight: var(--title-font-weight);
-    color: var(--default-color);
-    transition: var(--default-transition);
-}
-
-.principal__titulo__vovo:hover {
-    font-size: var(--title-font-size-hover);
-}
-
-.principal__conteudo__video__ceara {
+/* -----------------------
+-- === CONTEÚDO PRINCIPAL === */
+.principal__conteudo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+    flex-flow: row;
+    justify-content: center;
+    gap: 80px;
 }
 
-.principal__conteudo__video_choro {
+/* -----------------------
+-- === PRINCIPAL-FORTALEZA === */
+.principal__conteudo__fortaleza {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -150,31 +157,52 @@ body {
     gap: 20px;
 }
 
-.principal__conteudo__video__bye_fortaleza {
+.principal__conteudo__fortaleza__video {
     width: 70%;
 }
 
-.principal__conteudo__video__ceara__vovo {
+/* -----------------------
+-- === PRINCIPAL-CEARÁ === */
+.principal__conteudo__ceara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.principal__conteudo__ceara__paulo,
+.principal__conteudo__ceara__video {
     width: 125%;
     transition: var(--transition-img);
 }
 
-.principal__conteudo__video__ceara__vovo:hover {
+.principal__conteudo__ceara__paulo:hover,
+.principal__conteudo__ceara__video:hover {
     width: 130%;
     box-shadow: var(--default-box-shadow);
 }
 
-.principal__imagem__conteudo__cn {
+.principal__conteudo__ceara__derrota {
+    width: 105%;
+    transition: var(--transition-img);
+}
+
+.principal__conteudo__ceara__derrota:hover {
+    box-shadow: var(--default-box-shadow);
+    width: 115%;
+}
+
+.principal__conteudo__ceara__cdn {
     width: 70%;
     transition: var(--transition-img);
 }
 
-.principal__imagem__conteudo__cn:hover {
+.principal__conteudo__ceara__cdn:hover {
     box-shadow: var(--default-box-shadow);
     width: 80%;
 }
 
-.principal__conteudo__video__ceara__titulo {
+.principal__conteudo__ceara__tabela__titulo {
     font-family: var(--title-font-family);
     font-size: 3rem;
     font-weight: var(--general-font-weight);
@@ -182,30 +210,22 @@ body {
     transition: var(--default-transition);
 }
 
-.principal__conteudo__video__ceara__titulo:hover {
+.principal__conteudo__ceara__tabela__titulo:hover {
     font-size: var(--title-font-size);
 }
 
-.principal__conteudo__video__ceara__tabela {
+.principal__conteudo__ceara__tabela {
     width: 100%;
     transition: var(--transition-img);
 }
 
-.principal__conteudo__video__ceara__tabela:hover {
+.principal__conteudo__ceara__tabela:hover {
     width: 110%;
     box-shadow: var(--default-box-shadow);
 }
 
-.principal__imagem__conteudo__derrota {
-    width: 105%;
-    transition: var(--transition-img);
-}
-
-.principal__imagem__conteudo__derrota:hover {
-    box-shadow: var(--default-box-shadow);
-    width: 115%;
-}
-
+/* -----------------------
+-- === RODAPÉ === */
 .rodape {
     display: flex;
     justify-content: center;
@@ -216,22 +236,4 @@ body {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: var(--general-font-weight);
-}
-
-@media (max-width: 1020px) {
-    .principal__titulos__titulo_fortaleza__titulo {
-        font-size: 2.5rem;
-    }
-
-    .principal__titulos__titulo_fortaleza__titulo:hover {
-        font-size: 3rem;
-    }
-
-    .principal__titulo__vovo {
-        font-size: 2.5rem;
-    }
-
-    .principal__titulo__vovo:hover {
-        font-size: 3rem;
-    }
 }
