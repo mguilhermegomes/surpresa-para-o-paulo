@@ -12,14 +12,13 @@
 
     /* === font-size === */
     --title-font-size: 3.5rem;
-    --title-font-size-hover: 4rem;
 
     /* === font-weight === */
     --title-font-weight: 600;
     --general-font-weight: 400;
 
     /* === width === */
-    --title-img-width: 6rem;
+    --title-img-width: 5.5rem;
 
     /* === gap === */
     --title-gap: 10px;
@@ -53,8 +52,8 @@ body {
 }
 
 .cabecalho__links_link {
-    text-decoration: none;
     color: var(--default-color);
+    text-decoration: none;
     font-family: var(--title-font-family);
     font-size: 2.25rem;
     font-weight: var(--title-font-weight);
@@ -89,6 +88,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: var(--title-gap);
 }
 
@@ -100,12 +101,7 @@ body {
     font-family: var(--title-font-family);
     font-size: var(--title-font-size);
     font-weight: var(--title-font-weight);
-    color: var(--default-color);
     transition: var(--default-transition);
-}
-
-.titulo__ceara__texto:hover {
-    font-size: var(--title-font-size-hover);
 }
 
 /* -----------------------
@@ -114,12 +110,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: var(--title-gap);
 }
 
 .titulo__fortaleza__img {
     width: var(--title-img-width);
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 .titulo__fortaleza__texto {
@@ -130,97 +128,84 @@ body {
     transition: var(--default-transition);
 }
 
-.titulo__fortaleza__texto:hover {
-    font-size: var(--title-font-size-hover);
-}
-
 .titulo__fortaleza__texto__destaque {
     color: #054f77;
 }
 
 /* -----------------------
--- === CONTEÚDO PRINCIPAL === */
+-- === PRINCIPAL-CONTEÚDO === */
 .principal__conteudo {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    gap: 80px;
-}
-
-/* -----------------------
--- === PRINCIPAL-FORTALEZA === */
-.principal__conteudo__fortaleza {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-}
-
-.principal__conteudo__fortaleza__video {
-    width: 70%;
-}
-
-/* -----------------------
--- === PRINCIPAL-CEARÁ === */
-.principal__conteudo__ceara {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
 }
 
-.principal__conteudo__ceara__paulo,
-.principal__conteudo__ceara__video {
-    width: 125%;
+.principal__conteudo__paulo,
+.principal__conteudo__video {
+    width: 60%;
     transition: var(--transition-img);
 }
 
-.principal__conteudo__ceara__paulo:hover,
-.principal__conteudo__ceara__video:hover {
-    width: 130%;
+.principal__conteudo__paulo:hover,
+.principal__conteudo__video:hover {
+    width: 65%;
     box-shadow: var(--default-box-shadow);
 }
 
-.principal__conteudo__ceara__derrota {
-    width: 105%;
+/* -----------------------
+-- === PRINCIPAL-FORTALEZA === */
+.principal__conteudo__fortaleza {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.principal__conteudo__fortaleza__video {
+    width: 20%;
+}
+/*------------------------------------*/
+
+.principal__conteudo__derrota {
+    width: 55%;
     transition: var(--transition-img);
 }
 
-.principal__conteudo__ceara__derrota:hover {
+.principal__conteudo__derrota:hover {
     box-shadow: var(--default-box-shadow);
-    width: 115%;
+    width: 60%;
 }
 
-.principal__conteudo__ceara__cdn {
-    width: 70%;
+.principal__conteudo__cdn {
+    width: 35%;
     transition: var(--transition-img);
 }
 
-.principal__conteudo__ceara__cdn:hover {
+.principal__conteudo__cdn:hover {
     box-shadow: var(--default-box-shadow);
-    width: 80%;
+    width: 40%;
 }
 
-.principal__conteudo__ceara__tabela__titulo {
+.principal__conteudo__titulo {
     font-family: var(--title-font-family);
     font-size: 3rem;
     font-weight: var(--general-font-weight);
-    color: var(--default-color);
     transition: var(--default-transition);
 }
 
-.principal__conteudo__ceara__tabela__titulo:hover {
+.principal__conteudo__titulo:hover {
     font-size: var(--title-font-size);
 }
 
-.principal__conteudo__ceara__tabela {
-    width: 100%;
+.principal__conteudo__tabela {
+    width: 55%;
     transition: var(--transition-img);
 }
 
-.principal__conteudo__ceara__tabela:hover {
-    width: 110%;
+.principal__conteudo__tabela:hover {
+    width: 60%;
     box-shadow: var(--default-box-shadow);
 }
 
@@ -230,10 +215,234 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: var(--default-color);
     color: #000000;
     padding: 20px;
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: var(--general-font-weight);
+}
+
+
+@media (max-width: 1024px) {
+    .titulo__ceara__img,
+    .titulo__fortaleza__img {
+        width: 5rem;
+    }
+    
+    .titulo__ceara__texto,
+    .titulo__fortaleza__texto {
+        font-size: 3rem;
+    }
+
+    .principal__conteudo__fortaleza__video {
+        width: 25%;
+    }
+
+    .principal__conteudo__paulo,
+    .principal__conteudo__video {
+        width: 65%;
+    }
+
+    .principal__conteudo__paulo:hover,
+    .principal__conteudo__video:hover {
+        width: 70%;
+    }
+
+    .principal__conteudo__derrota {
+        width: 60%;
+    }
+
+    .principal__conteudo__derrota:hover {
+        width: 65%;
+    }
+
+    .principal__conteudo__cdn {
+        width: 40%;
+    }
+
+    .principal__conteudo__cdn:hover {
+        width: 45%;
+    }
+
+    .principal__conteudo__titulo {
+        font-size: 2.5rem;
+    }
+
+    .principal__conteudo__titulo:hover {
+        font-size: 3rem;
+    }
+
+    .principal__conteudo__tabela {
+        width: 60%;
+    }
+
+    .principal__conteudo__tabela:hover {
+        width: 65%;
+    }
+}
+
+@media (max-width: 788px) {
+    .cabecalho {
+        padding: 2% 0% 0% 0%;
+    }
+
+    .cabecalho__links {
+        justify-content: center;
+    }
+    
+    .cabecalho__links_link {
+        font-size: 1.8rem;
+    }
+    
+    .principal__titulos {
+        padding: 0% 3%;
+    }
+
+    .titulo__ceara {
+        gap: 5px;
+    }
+    
+    .titulo__ceara__img,
+    .titulo__fortaleza__img {
+        width: 4.5rem;
+    }
+    
+    .titulo__ceara__texto,
+    .titulo__fortaleza__texto {
+        font-size: 2.5rem;
+    }
+
+    .principal__conteudo {
+        gap: 25px;
+    }
+    
+    .principal__conteudo__fortaleza {
+        gap: 40px;
+    }
+    
+    .principal__conteudo__fortaleza__video {
+        width: 30%;
+    }
+
+    .principal__conteudo__paulo,
+    .principal__conteudo__video {
+        width: 75%;
+    }
+
+    .principal__conteudo__derrota {
+        width: 65%;
+    }
+
+    .principal__conteudo__cdn {
+        width: 45%;
+    }
+
+    .principal__conteudo__titulo {
+        font-size: 2.2rem;
+    }
+
+    .principal__conteudo__tabela {
+        width: 65%;
+    }
+
+    .principal__conteudo__paulo,
+    .principal__conteudo__video,
+    .principal__conteudo__derrota,
+    .principal__conteudo__cdn,
+    .principal__conteudo__titulo,
+    .principal__conteudo__tabela {
+        pointer-events: none;
+    }
+}
+
+@media (max-width: 530px) {
+    .cabecalho__links_link {
+        font-size: 1.5rem;
+    }
+    
+    .titulo__ceara {
+        gap: 3px;
+    }
+    
+    .titulo__ceara__img,
+    .titulo__fortaleza__img {
+        width: 4rem;
+    }
+    
+    .titulo__ceara__texto,
+    .titulo__fortaleza__texto {
+        font-size: 2rem;
+    }
+
+    .principal__conteudo__fortaleza__video {
+        width: 35%;
+    }
+
+    .principal__conteudo__paulo,
+    .principal__conteudo__video {
+        width: 85%;
+        transition: var(--transition-img);
+    }
+
+    .principal__conteudo__derrota {
+        width: 75%;
+        transition: var(--transition-img);
+    }
+
+    .principal__conteudo__cdn {
+        width: 55%;
+        transition: var(--transition-img);
+    }
+
+    .principal__conteudo__titulo {
+        font-size: 2rem;
+    }
+
+    .principal__conteudo__tabela {
+        width: 75%;
+        transition: var(--transition-img);
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo__ceara__img,
+    .titulo__fortaleza__img {
+        width: 3.8rem;
+    }
+    
+    .titulo__ceara__texto,
+    .titulo__fortaleza__texto {
+        font-size: 1.8rem;
+    }   
+    
+    .principal__conteudo__fortaleza {
+        gap: 20px;
+    }
+    
+    .principal__conteudo__fortaleza__video {
+        width: 40%;
+    }
+
+    .principal__conteudo__paulo,
+    .principal__conteudo__video {
+        width: 90%;
+    }
+
+    .principal__conteudo__derrota {
+        width: 85%;
+    }
+
+    .principal__conteudo__cdn {
+        width: 70%;
+    }
+
+    .principal__conteudo__titulo {
+        font-size: 1.8rem;
+    }
+
+    .principal__conteudo__tabela {
+        width: 85%;
+    }
 }
