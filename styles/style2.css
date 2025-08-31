@@ -212,15 +212,12 @@ body {
 /* -----------------------
 -- === RODAPÉ === */
 .rodape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     background-color: var(--default-color);
     color: #000000;
     padding: 20px;
     font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: var(--general-font-weight);
 }
 

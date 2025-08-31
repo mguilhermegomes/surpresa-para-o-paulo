@@ -3,79 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>O Melhor do Mundo</title>
+    <title>Ceará</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header class="cabecalho">
+    <header class="cabecalho fade-in">
       <nav class="cabecalho__links">
         <a class="cabecalho__links_link" href="index.html">Home</a>
-        <a class="cabecalho__links_link" href="index2.html">vozão</a>
+        <a class="cabecalho__links_link" href="index2.html">Vozão</a>
         <a class="cabecalho__links_link" href="index3.html">Deu Match</a>
+        <a class="cabecalho__links_link" href="index4.html">Créditos</a>
       </nav>
     </header>
-    <main class="principal">
-      <section class="principal__conteudo">
-        <h1 class="principal__conteudo__titulo">
-          Contemple o hino do
-          <strong class="principal__conteudo__titulo__destaque">
-            melhor do mundo!
-          </strong>
-        </h1>
-        <article class="principal__conteudo__hino">
-          <p class="principal__conteudo__hino__paragrafo">
-            Teu passado é todo coberto de glórias Dia a dia tú conquistas mais
-            vitórias Tua bandeira alvinegra desfraldada Teu time em campo tem
-            vitória assegurada
-          </p>
-          <p class="principal__conteudo__hino__paragrafo">
-            Teu passado é todo coberto de glórias Dia a dia tú conquistas mais
-            vitórias Tua bandeira alvinegra desfraldada Teu time em campo tem
-            vitória assegurada
-          </p>
-          <p class="principal__conteudo__hino__paragrafo">
-            <strong class="principal__conteudo__titulo__destaque">
-            É o vozão Ceará vai ganhar
-            </strong>
-          </p>
-          <p class="principal__conteudo__hino__paragrafo">
-            És o time das grandes campanhas Sempre aqui ou lá fora Tú ganhas
-          </p>
-          <p class="principal__conteudo__hino__paragrafo">
-            Com teus craques em campo a brilhar Ceará tua glória é lutar
-          </p>
-          <p class="principal__conteudo__hino__paragrafo">
-            Teu passado é todo coberto de glórias Dia a dia tú conquistas mais
-            vitórias Tua bandeira alvinegra desfraldada Teu time em campo tem
-            vitória assegurada
-          </p>
-          <p class="principal__conteudo__hino__paragrafo">
-            Campeão da popularidade Tua torcida hoje é toda a cidade É um grande
-            público a te estimular
-          </p>
-          <p class="principal__conteudo__hino__paragrafo">
-            <strong class="principal__conteudo__titulo__destaque">
-            É o vozão Ceará vai ganhar
-            </strong>
-          </p>
-          <p class="principal__conteudo__hino__paragrafo">
-            És o time das grandes campanhas Sempre aqui ou lá fora Tú ganhas
-          </p>
-          <p class="principal__conteudo__hino__paragrafo">
-            Com teus craques em campo a brilhar Ceará tua glória é lutar
-          </p>
-        </article>
+    <main class="conteudo__principal">
+      <section class="coluna__ceara fade-in">
+        <img class="coluna__ceara__img fade-in" src="assets/ceara.png" alt="Escudo do Ceará SC" />
+        <audio id="hino-audio" loop src="assets/HINO DO CEARÁ.mp3"></audio>
+        <button id="hino-ouvir">OUÇA O HINO</button>
       </section>
-        <figure class="principal__imagem">
-          <img
-            class="principal__imagem__conteudo"
-            src="https://images.suamusica.com.br/E2z4yZfmpCi14--1V4p37WjsdtM=/500x500/filters:format(webp)/27944531/2406994/cd_cover.jpg"
-            alt="Ceará escudo"
-          />
-          <figcaption class="principal__imagem__legenda">
-            O Hino do melhor do mundo!
-          </figcaption>
+      <section class="coluna__hino">
+        <h1 class="coluna__hino__titulo fade-in">
+          Contemple o hino do melhor do mundo!
+        </h1>
+        <div class="coluna__hino__estrofes">
+          <article class="hino__estrofe fade-in">
+            <p class="hino__estrofe__verso">
+              Teu passado é todo coberto de glórias
+            </p>
+            <p class="hino__estrofe__verso">
+              Dia a dia tú conquistas mais vitórias
+            </p>
+            <p class="hino__estrofe__verso">
+              Tua bandeira alvinegra desfraldada
+            </p>
+            <p class="hino__estrofe__verso">
+              Teu time em campo tem vitória assegurada
+            </p>
+          </article>
+          <article class="hino__estrofe fade-in">
+            <p class="hino__estrofe__verso">Campeão da popularidade</p>
+            <p class="hino__estrofe__verso">Tua torcida hoje é toda a cidade</p>
+            <p class="hino__estrofe__verso">
+              É um grande público a te estimular
+            </p>
+          </article>
+          <article class="hino__estrofe fade-in">
+            <strong>
+              <p class="hino__estrofe__verso">É o vozão</p>
+              <p class="hino__estrofe__verso">Ceará vai ganhar</p>
+            </strong>
+          </article>
+          <article class="hino__estrofe fade-in">
+            <p class="hino__estrofe__verso">És o time das grandes campanhas</p>
+            <p class="hino__estrofe__verso">Sempre aqui ou lá fora</p>
+            <p class="hino__estrofe__verso">Tú ganhas</p>
+          </article>
+          <article class="hino__estrofe fade-in">
+            <p class="hino__estrofe__verso">
+              Com teus craques em campo a brilhar
+            </p>
+            <p class="hino__estrofe__verso">Ceará tua glória é lutar</p>
+          </article>
+          <article class="hino__estrofe fade-in">
+            <p class="hino__estrofe__verso">
+              Teu passado é todo coberto de glórias
+            </p>
+            <p class="hino__estrofe__verso">
+              Dia a dia tú conquistas mais vitórias
+            </p>
+            <p class="hino__estrofe__verso">
+              Tua bandeira alvinegra desfraldada
+            </p>
+            <p class="hino__estrofe__verso">
+              Teu time em campo tem vitória assegurada
+            </p>
+          </article>
+          <article class="hino__estrofe fade-in">
+            <p class="hino__estrofe__verso">Campeão da popularidade</p>
+            <p class="hino__estrofe__verso">Tua torcida hoje é toda a cidade</p>
+            <p class="hino__estrofe__verso">
+              É um grande público a te estimular
+            </p>
+          </article>
+          <article class="hino__estrofe fade-in">
+            <p class="hino__estrofe__verso"><strong>É o vozão</strong></p>
+            <p class="hino__estrofe__verso">
+              <strong>Ceará vai ganhar</strong>
+            </p>
+          </article>
+          <article class="hino__estrofe fade-in">
+            <p class="hino__estrofe__verso">És o time das grandes campanhas</p>
+            <p class="hino__estrofe__verso">Sempre aqui ou lá fora</p>
+            <p class="hino__estrofe__verso">Tú ganhas</p>
+          </article>
+          <article class="hino__estrofe fade-in">
+            <p class="hino__estrofe__verso">
+              Com teus craques em campo a brilhar
+            </p>
+            <p class="hino__estrofe__verso">Ceará tua glória é lutar</p>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer class="rodape">Desenvolvido por PH - Torcedor Fiel do Ceará</footer>
+    <footer class="rodape fade-in">Desenvolvido por PH - Torcedor Fiel do Ceará</footer>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
