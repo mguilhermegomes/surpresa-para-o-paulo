@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/style2.css" />
   </head>
   <body>
-    <header class="cabecalho">
+    <header class="cabecalho fade-in">
       <nav class="cabecalho__links">
         <a class="cabecalho__links_link" href="index.html">Home</a>
         <a class="cabecalho__links_link" href="index2.html">vozão</a>
@@ -16,91 +16,117 @@
     </header>
     <main class="principal">
       <section class="principal__titulos">
-        <div class="titulo__ceara">
+        <div class="titulo__ceara fade-in">
           <img
+            loading="lazy"
             class="titulo__ceara__img"
             src="assets/ceara-1.jpeg"
-            alt="vovo-bruto-ceara"
+            alt="Vovô do Ceará SC"
           />
           <h1 class="titulo__ceara__texto">
             Vovozão mete o gato véi pra correr
           </h1>
           <img
+            loading="lazy"
             class="titulo__ceara__img"
             src="assets/ceara-1.jpeg"
-            alt="vovo-bruto-ceara"
+            alt="Vovô do Ceará SC"
           />
         </div>
-        <div class="titulo__fortaleza">
+        <div class="titulo__fortaleza fade-in">
           <img
+            loading="lazy"
             class="titulo__fortaleza__img"
             src="assets/gato.jpeg"
-            alt="gato-vei"
+            alt="Gato com juba de leão"
           />
           <h2 class="titulo__fortaleza__texto">
-            Miau <strong class="titulo__fortaleza__texto__destaque">Miau</strong> Miau
-            <strong class="titulo__fortaleza__texto__destaque">Miau</strong> Miau
+            Miau
+            <span class="titulo__fortaleza__texto__destaque">Miau</span>
+            Miau
+            <span class="titulo__fortaleza__texto__destaque">Miau</span>
+            Miau
           </h2>
           <img
+            loading="lazy"
             class="titulo__fortaleza__img"
             src="assets/gato.jpeg"
-            alt="gato-vei"
+            alt="Gato com juba de leão"
           />
         </div>
       </section>
       <section class="principal__conteudo">
+        <video
+          loading="lazy"
+          class="principal__conteudo__video"
+          src="assets/vovonadanca.mp4"
+          controls
+          loop
+        >
+          VOVÔ
+        </video>
+        <div class="principal__conteudo__fortaleza fade-in">
           <video
-            class="principal__conteudo__video"
-            src="assets/vovonadanca.mp4"
-            controls
+            loading="lazy"
+            class="principal__conteudo__fortaleza__video"
+            src="assets/byebyefortal.mp4"
+            autoplay
+            muted
             loop
           >
-            VOVÔ
+            ByeFortal
           </video>
-          <div class="principal__conteudo__fortaleza">
-            <video
-              class="principal__conteudo__fortaleza__video"
-              src="assets/byebyefortal.mp4"
-              autoplay
-              muted
-              loop
-            >
-              ByeFortal
-            </video>
-            <video
-              class="principal__conteudo__fortaleza__video"
-              src="assets/byebyefortal.mp4"
-              autoplay
-              muted
-              loop
-            >
-              ByeFortal
-            </video>
+          <video
+            loading="lazy"
+            class="principal__conteudo__fortaleza__video"
+            src="assets/byebyefortal.mp4"
+            autoplay
+            muted
+            loop
+          >
+            ByeFortal
+          </video>
         </div>
+        <div class="container-animation fade-in">
           <img
+            loading="lazy"
             class="principal__conteudo__derrota"
             src="assets/derrotafortaleza4-0.jpg"
-            alt="derrota-fortaleza-4-0"
+            alt="Placar 4 a 0 - Fortaleza perdeu para o Ceará"
           />
+        </div>
+        <div class="container-animation fade-in">
           <img
+            loading="lazy"
             class="principal__conteudo__cdn"
             src="assets/haha.jpg"
-            alt="fortaleza-não-ganha-do-ceara"
+            alt="Fortaleza não ganha do Ceará a 23 anos na copa do nordeste"
           />
+        </div>
+        <div class="container-animation fade-in">
           <img
+            loading="lazy"
             class="principal__conteudo__derrota"
             src="assets/derrotafortaleza3-1.jpg"
-            alt="derrota-fortaleza-3-1"
+            alt="Placar 3 a 1 - Fortaleza perdeu para o Ceará"
           />
-          <h2 class="principal__conteudo__titulo">Se ligou na tabela?</h2>
-          <img class="principal__conteudo__tabela" src="assets/tabelabr.jpeg" alt="Imagem da tabela do Brasileirão">
+        </div>
+        <h2 class="principal__conteudo__titulo fade-in">Se ligou na tabela?</h2>
+        <div class="container-animation fade-in">
           <img
-            class="principal__conteudo__paulo"
-            src="assets/souvozao.jpg"
+            loading="lazy"
+            class="principal__conteudo__tabela"
+            src="assets/tabelabr.jpeg"
+            alt="Tabela do Brasileirão"
           />
-          <h2 class="principal__conteudo__titulo">#SOUVOZÃO</h2>
+        </div>
+        <div class="container-animation fade-in">
+          <img loading="lazy" class="principal__conteudo__paulo" src="assets/souvozao.jpg" alt="Paulo no estilo torcedor do Ceará"/>
+        </div>
+        <h2 class="principal__conteudo__titulo fade-in">#SOUVOZÃO</h2>
       </section>
     </main>
-    <footer class="rodape">Desenvolvido por PH - Torcedor Fiel do Ceará</footer>
+    <footer class="rodape fade-in">Desenvolvido por Paulo Henrique Mendes - Torcedor Fiel do Ceará</footer>
+    <script src="scripts/app2.js"></script>
   </body>
 </html>
