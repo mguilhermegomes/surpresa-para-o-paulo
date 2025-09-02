@@ -23,6 +23,19 @@
   --default-background-color: #000000;
 }
 
+/* === ELEMENTOS APARECEM SUAVEMENTE === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* -------------------------------------*/
+
 
 body {
     background-color: var(--default-background-color);
@@ -110,6 +123,7 @@ body {
 }
 
 .projeto__mg__social-link {
+  text-align: center;
   font-size: var(--general-font-size);
   padding: 10px;
   width: 50%;
@@ -153,31 +167,6 @@ body {
   border-radius: 50%;
 }
 
-/*.oliveira {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-
-.oliveira__img-souvozao {
-  width: 45%;
-  border-radius: 16px;
-}
-
-.souvozao__titulo {
-  font-family: var(--title-font-family);
-  font-weight: var(--title-font-weight);
-  font-size: 3rem;
-}
-
-.souvozao__descricao {
-  font-family: var(--general-font-family);
-  font-weight: var(--title-font-weight);
-  font-size: 1.4rem;
-  color: #dedede;
-}*/
-
 .rodape {
   text-align: center;
   background-color: var(--default-color);
@@ -187,4 +176,77 @@ body {
   font-family: var(--general-font-family);
   font-size: var(--general-font-size);
   font-weight: var(--general-font-weight);
+}
+
+@media (max-width: 1200px) {
+  .principal__mg {
+    width: 42%;
+  }
+}
+
+@media (max-width: 980px) {
+  .cabecalho {
+    padding: 2% 0% 0% 0%;
+  }
+
+  .cabecalho__links {
+    justify-content: center;
+  }
+  
+  .conteudo__principal {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+ .principal__projeto {
+  padding: 0% 5%;
+  width: 100%;
+ }
+}
+
+@media (max-width: 830px) {
+  .principal__mg {
+    width: 55%;
+  }
+}
+
+@media (max-width: 588px) {
+  .cabecalho__links {
+    gap: 20px;
+  }
+  
+  .principal__mg {
+    width: 70%;
+  }
+}
+
+@media (max-width: 440px) {
+  .cabecalho__links {
+    gap: 10px;
+  }
+  
+  .cabecalho__links_link {
+    font-size: 1.8rem;
+  }
+
+  .principal__mg {
+    width: 90%;
+  }
+
+  .mg__subtitulo {
+  font-size: 2rem;
+}
+
+.projeto__mg__social-link,
+.mg__social-link {
+  font-size: var(--general-font-size);
+}
+
+.projeto__mg__social-link {
+  width: 80%;
+}
+
+.rodape {
+  font-size: 1rem;
+}
 }

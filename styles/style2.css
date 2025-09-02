@@ -9,9 +9,11 @@
 :root {
     /* === font-family === */
     --title-font-family: "Bebas Neue", sans-serif;
+    --general-font-family: "Montserrat", sans-serif;
 
     /* === font-size === */
     --title-font-size: 3.5rem;
+    --general-font-size: 1.2rem;
 
     /* === font-weight === */
     --title-font-weight: 600;
@@ -230,6 +232,12 @@ body {
     box-shadow: var(--default-box-shadow);
 }
 
+.principal__conteudo__creditos {
+    font-family: var(--general-font-family);
+    font-size: var(--general-font-size);
+    text-align: center;
+}
+
 /* -----------------------
 -- === RODAPÉ === */
 .rodape {
@@ -237,8 +245,8 @@ body {
     background-color: var(--default-color);
     color: #000000;
     padding: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
+    font-family: var(--general-font-family);
+    font-size: var(--general-font-size);
     font-weight: var(--general-font-weight);
 }
 
@@ -304,6 +312,10 @@ body {
 
     .principal__conteudo__tabela:hover {
         width: 100%;
+    }
+
+    .principal__conteudo__creditos {
+        font-size: 1rem;
     }
 }
 
@@ -451,6 +463,10 @@ body {
 
     .rodape {
         font-size: 1rem;
+    }
+
+    .principal__conteudo__creditos {
+        font-size: 0.9rem;
     }
 }
 
